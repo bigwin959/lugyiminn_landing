@@ -1,0 +1,56 @@
+{
+  "logo": "/uploads/1770634096661-temp_banner.jfif",
+  "affiliateButton": {
+    "label": "RTP % မြင့်ဂိမ်းစမ်းရန်",
+    "url": "https://playrandom-lugyiminn.netlify.app/",
+    "enabled": true
+  },
+  "mainButtons": [
+    {
+      "id": "telegram",
+      "label": "လူကြီးမင်း Telegram ဆက်သွယ်ရန်",
+      "url": "#",
+      "bgClass": "bg-telegram"
+    },
+    {
+      "id": "line",
+      "label": "LINE စိမ်းမှဆက်သွယ်ရန်",
+      "url": "#",
+      "bgClass": "bg-line"
+    },
+    {
+      "id": "messenger",
+      "label": "Messenger မှဆက်သွယ်ရန်",
+      "url": "#",
+      "bgClass": "bg-messenger"
+    },
+    {
+      "id": "viber",
+      "label": "Viber မှာဆက်သွယ်ရန်",
+      "url": "#",
+      "bgClass": "bg-viber"
+    }
+  ],
+  "socials": [
+    {
+      "id": "facebook",
+      "url": "#",
+      "active": true
+    },
+    {
+      "id": "youtube",
+      "url": "#",
+      "active": true
+    },
+    {
+      "id": "tiktok",
+      "url": "#",
+      "active": true
+    },
+    {
+      "id": "telegram",
+      "url": "#",
+      "active": true
+    }
+  ]
+}
