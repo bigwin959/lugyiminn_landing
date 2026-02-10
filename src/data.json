@@ -1,5 +1,5 @@
 {
-  "logo": "https://raw.githubusercontent.com/bigwin959/lugyiminn_landing/main/public/uploads/1770708432283-Weekly_Cashback.jpg",
+  "logo": "https://raw.githubusercontent.com/bigwin959/lugyiminn_landing/main/public/uploads/1770711099224-16_922.png",
   "affiliateButton": {
     "label": "RTP % မြင့်ဂိမ်းစမ်းရန်",
     "url": "https://playrandom-lugyiminn.netlify.app/",
@@ -9,25 +9,19 @@
     {
       "id": "telegram",
       "label": "လူကြီးမင်း Telegram ဆက်သွယ်ရန်",
-      "url": "https://www.google.com/",
+      "url": "https://t.me/lugyiminn_bot",
       "bgClass": "bg-telegram"
-    },
-    {
-      "id": "line",
-      "label": "LINE စိမ်းမှဆက်သွယ်ရန်",
-      "url": "#",
-      "bgClass": "bg-line"
     },
     {
       "id": "messenger",
       "label": "Messenger မှဆက်သွယ်ရန်",
-      "url": "#",
+      "url": "https://www.80532373.com/m.me/516688938204209",
       "bgClass": "bg-messenger"
     },
     {
       "id": "viber",
       "label": "Viber မှာဆက်သွယ်ရန်",
-      "url": "#",
+      "url": "https://tinyurl.com/bdd48y2m",
       "bgClass": "bg-viber"
     }
   ],
