@@ -8,7 +8,7 @@
   "mainButtons": [
     {
       "id": "telegram",
-      "label": "လူကြီးမင်း Telegram ဆက်သွယ်ရန်",
+      "label": "Telegram ဆက်သွယ်ရန်",
       "url": "https://t.me/lugyiminn_bot",
       "bgClass": "bg-telegram"
     },
