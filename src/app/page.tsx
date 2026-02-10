@@ -25,16 +25,54 @@ type Data = {
 };
 
 async function getData(): Promise<Data> {
-  const filePath = path.join(process.cwd(), "src/data.json");
-  if (!fs.existsSync(filePath)) {
+  const REPO_OWNER = 'bigwin959';
+  const REPO_NAME = 'lugyiminn_landing';
+  const BRANCH = 'main';
+  const DATA_FILE_PATH = 'src/data.json';
+
+  try {
+    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
+    // Default fallback data (in case of fetch failure)
+    const defaultData = {
+      logo: "/uploads/logo.png",
+      mainButtons: [],
+      socials: []
+    };
+
+    let url = `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/${DATA_FILE_PATH}`;
+    let headers: HeadersInit = {};
+
+    if (GITHUB_TOKEN) {
+      // Use API if token exists for better freshness and to avoid caching issues of raw.githubusercontent
+      url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${DATA_FILE_PATH}`;
+      headers = {
+        'Authorization': `token ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3.raw' // Request raw content
+      };
+    }
+
+    // Force no-store to avoid caching
+    const response = await fetch(url, {
+      headers,
+      cache: 'no-store',
+      next: { revalidate: 0 } // Next.js specific revalidation
+    });
+
+    if (!response.ok) {
+      console.error(`Failed to fetch data from GitHub: ${response.statusText}`);
+      return defaultData;
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching data:', error);
     return {
       logo: "/uploads/logo.png",
       mainButtons: [],
       socials: []
     };
   }
-  const fileContent = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(fileContent);
 }
 
 export default async function Home() {
@@ -42,7 +80,7 @@ export default async function Home() {
 
   // Helper for social colors
   const getSocialColor = (id: string) => {
-    switch(id) {
+    switch (id) {
       case 'facebook': return '#1877F2';
       case 'youtube': return '#FF0000';
       case 'tiktok': return '#000000'; // Tiktok gradient is complex, simplified to black/dark
@@ -72,16 +110,16 @@ export default async function Home() {
 
         {/* Affiliate / Promo Button */}
         {data.affiliateButton && data.affiliateButton.enabled && (
-             <Link
-               href={data.affiliateButton.url}
-               target="_blank"
-               rel="noopener noreferrer"
-               className={styles.affiliateButton}
-             >
-               <span style={{ fontSize: '1rem', marginRight: '5px' }}>🔥</span>
-               <span>{data.affiliateButton.label}</span>
-               <span style={{ fontSize: '1rem', marginLeft: '5px' }}>🔥</span>
-             </Link>
+          <Link
+            href={data.affiliateButton.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.affiliateButton}
+          >
+            <span style={{ fontSize: '1rem', marginRight: '5px' }}>🔥</span>
+            <span>{data.affiliateButton.label}</span>
+            <span style={{ fontSize: '1rem', marginLeft: '5px' }}>🔥</span>
+          </Link>
         )}
 
         {/* Main Action Buttons */}
@@ -91,7 +129,7 @@ export default async function Home() {
             let Icon = null;
             const lowerId = btn.id.toLowerCase();
             const lowerLabel = btn.label.toLowerCase();
-            
+
             if (lowerId.includes('telegram') || lowerLabel.includes('telegram')) Icon = FaTelegram;
             else if (lowerId.includes('line') || lowerLabel.includes('line')) Icon = FaLine;
             else if (lowerId.includes('messenger') || lowerLabel.includes('messenger')) Icon = FaFacebookMessenger;
