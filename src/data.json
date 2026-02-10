@@ -1,5 +1,5 @@
 {
-  "logo": "/uploads/1770634096661-temp_banner.jfif",
+  "logo": "https://raw.githubusercontent.com/bigwin959/lugyiminn_landing/main/public/uploads/1770707047469-Weekend_Bonus.jpg",
   "affiliateButton": {
     "label": "RTP % မြင့်ဂိမ်းစမ်းရန်",
     "url": "https://playrandom-lugyiminn.netlify.app/",
@@ -9,7 +9,7 @@
     {
       "id": "telegram",
       "label": "လူကြီးမင်း Telegram ဆက်သွယ်ရန်",
-      "url": "#",
+      "url": "https://www.google.com/",
       "bgClass": "bg-telegram"
     },
     {
