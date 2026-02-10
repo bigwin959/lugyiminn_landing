@@ -10,19 +10,22 @@
       "id": "telegram",
       "label": "Telegramမှဆက်သွယ်ရန်",
       "url": "https://t.me/lugyiminn_bot",
-      "bgClass": "bg-telegram"
+      "bgClass": "bg-telegram",
+      "color": "#24c8ff"
     },
     {
       "id": "messenger",
       "label": "Messengerမှဆက်သွယ်ရန်",
       "url": "https://m.me/516688938204209",
-      "bgClass": "bg-messenger"
+      "bgClass": "bg-messenger",
+      "color": "#004cff"
     },
     {
       "id": "viber",
       "label": "Viberမှဆက်သွယ်ရန်",
       "url": "https://tinyurl.com/bdd48y2m",
-      "bgClass": "bg-viber"
+      "bgClass": "bg-viber",
+      "color": "#7207ab"
     }
   ],
   "socials": [
