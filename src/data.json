@@ -8,19 +8,19 @@
   "mainButtons": [
     {
       "id": "telegram",
-      "label": "Telegram ဆက်သွယ်ရန်",
+      "label": "Telegramမှဆက်သွယ်ရန်",
       "url": "https://t.me/lugyiminn_bot",
       "bgClass": "bg-telegram"
     },
     {
       "id": "messenger",
-      "label": "Messenger မှဆက်သွယ်ရန်",
+      "label": "Messengerမှဆက်သွယ်ရန်",
       "url": "https://www.80532373.com/m.me/516688938204209",
       "bgClass": "bg-messenger"
     },
     {
       "id": "viber",
-      "label": "Viber မှာဆက်သွယ်ရန်",
+      "label": "Viberမှဆက်သွယ်ရန်",
       "url": "https://tinyurl.com/bdd48y2m",
       "bgClass": "bg-viber"
     }
