@@ -14,16 +14,9 @@
       "color": "#24c8ff"
     },
     {
-      "id": "messenger",
-      "label": "Messengerမှဆက်သွယ်ရန်",
-      "url": "https://m.me/516688938204209",
-      "bgClass": "bg-messenger",
-      "color": "#004cff"
-    },
-    {
       "id": "viber",
       "label": "Viberမှဆက်သွယ်ရန်",
-      "url": "https://tinyurl.com/msspknf7",
+      "url": "https://tinyurl.com/4hpnr7xp",
       "bgClass": "bg-viber",
       "color": "#7207ab"
     }
