@@ -3,7 +3,7 @@
   "affiliateButton": {
     "label": "ဒီနေ့အတွက်အမြင့်ဆုံးဂိမ်းများ",
     "url": "https://playrandom-lugyiminn.netlify.app/",
-    "enabled": true
+    "enabled": false
   },
   "mainButtons": [
     {
