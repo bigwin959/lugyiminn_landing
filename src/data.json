@@ -8,38 +8,38 @@
   "mainButtons": [
     {
       "id": "telegram",
-      "label": "Telegramမှဆက်သွယ်ရန်",
-      "url": "https://t.me/lugyiminn_bot",
+      "label": "Telegramမှဆက်သွယ်ရန်နှိပ်ပါ",
+      "url": "https://t.me/lugyimin_bot",
       "bgClass": "bg-telegram",
       "color": "#24c8ff"
     },
     {
       "id": "viber",
-      "label": "Viberမှဆက်သွယ်ရန်",
-      "url": "https://tinyurl.com/4hpnr7xp",
+      "label": "Messengerမှဆက်သွယ်ရန်နှိပ်ပါ",
+      "url": "https://m.me/516688938204209",
       "bgClass": "bg-viber",
-      "color": "#7207ab"
+      "color": "#075cab"
     }
   ],
   "socials": [
     {
       "id": "facebook",
-      "url": "#",
+      "url": "https://www.facebook.com/profile.php?id=61574235443669",
       "active": true
     },
     {
       "id": "youtube",
-      "url": "#",
+      "url": "https://www.youtube.com/@LugyiMinnOfficial",
       "active": true
     },
     {
       "id": "tiktok",
-      "url": "#",
+      "url": "https://www.tiktok.com/@lugyimin3209",
       "active": true
     },
     {
       "id": "telegram",
-      "url": "#",
+      "url": "https://t.me/lugyimininfo",
       "active": true
     }
   ]
